@@ -26,7 +26,7 @@ class IndexControllerTest extends BaseControllerTest {
     private static final String PATH = "/";
 
     @Test
-    public void shouldReturn200WhenSendingRequestToController() throws Exception {
+    public void shouldReturnIndexContent() throws Exception {
         // when
         ResultActions actualResult = this.mockMvc.perform(get(PATH));
 

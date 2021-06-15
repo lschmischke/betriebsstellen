@@ -37,12 +37,6 @@ public class DefaultBetriebsstellenService implements BetriebsstellenService {
     }
 
     private BetriebsstellenResponse betriebsstelleToResponse (Betriebsstelle betriebsstelle) {
-//        return BetriebsstellenResponse.builder()
-//                .Name(betriebsstelle.getName())
-//                .Kurzname(betriebsstelle.getKurzname())
-//                .Typ(betriebsstelle.getTyp())
-//                .abk(betriebsstelle.getAbk())
-//                .build();
         return mapperFacade.map(betriebsstelle, BetriebsstellenResponse.class);
     }
 
