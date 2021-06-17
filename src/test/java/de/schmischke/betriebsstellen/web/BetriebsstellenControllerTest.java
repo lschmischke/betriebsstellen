@@ -25,7 +25,7 @@ class BetriebsstellenControllerTest extends BaseControllerTest {
     private static final String PATH = "/betriebsstelle";
 
     @Test
-    void shouldGetTasks() throws Exception {
+    void shouldGetBetriebsstellen() throws Exception {
         // given
         String name = "betriebsstelle-name";
 
@@ -46,7 +46,7 @@ class BetriebsstellenControllerTest extends BaseControllerTest {
     }
 
     @Test
-    void shouldGetSingleTask() throws Exception {
+    void shouldGetSingleBetriebsstelle() throws Exception {
         // given
         String apk = "bs";
         String name = "betriebsstelle-name";
